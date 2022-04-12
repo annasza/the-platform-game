@@ -72,13 +72,93 @@ namespace platform_game
                         {
                             force = 8;
                             player.Top = x.Top - player.Height;
+
+                            if ((string)x.Name == "horizontalPlatform" && goLeft == false || (string)x.Name == "horizontalPlatform" && goRight == false)
+                            {
+                                player.Left -= horizontalSpeed;
+                            }
+
                         }
 
-                        x.BringToFront();
+                        x.BringToFront(); 
+                    }
+
+                    if ((string)x.Tag == "coin")
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
+                        {
+                            x.Visible = false;
+                            score++;
+                        }
+                    }
+
+                    if (((string)x.Tag == "enemy"))
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            gameTimer.Stop();
+                            isGameOver = true;
+                            txtScore.Text = "Score: " + score + Environment.NewLine + "You were killed" + Environment.NewLine + "Game over!!!";
+                        }
                     }
                 }
 
             }
+
+            // the platforms are moving
+
+            horizontalPlatform.Left -= horizontalSpeed;
+
+            if (horizontalPlatform.Left < 0 || horizontalPlatform.Left + horizontalPlatform.Width > this.ClientSize.Width)
+            {
+                horizontalSpeed = -horizontalSpeed;
+            }
+
+            verticalPlatform.Top += verticalSpeed;
+
+            if (verticalPlatform.Top < 174 || verticalPlatform.Top > 300)
+            {
+                verticalSpeed = -verticalSpeed;
+            }
+
+            // the enemies are moving
+
+            enemyOne.Left += enemyOneSpeed;
+
+            if (enemyOne.Left < pictureBox6.Left || enemyOne.Left + enemyOne.Width > pictureBox6.Left + pictureBox6.Width)
+            {
+                enemyOneSpeed = -enemyOneSpeed;
+            }
+
+            enemyTwo.Left += enemyTwoSpeed;
+
+            if (enemyTwo.Left < pictureBox3.Left || enemyTwo.Left+ enemyTwo.Width > pictureBox3.Left + pictureBox3.Width)
+            {
+                enemyTwoSpeed = -enemyTwoSpeed;
+            }
+
+            //Game over when player fell off
+
+            if (player.Top + player.Height > this.ClientSize.Height + 50)
+            {
+                gameTimer.Stop();
+                isGameOver = true;
+                txtScore.Text = "Score: " + score + Environment.NewLine + "You fell off" + Environment.NewLine + "Game over!!!";
+            }
+
+            //
+
+            if (player.Bounds.IntersectsWith(door.Bounds) && score == 30)
+            {
+                gameTimer.Stop();
+                isGameOver = true;
+                txtScore.Text = "Score: " + score + Environment.NewLine + "Congratulations, You won!";
+            }
+            if (player.Bounds.IntersectsWith(door.Bounds) && score != 30)
+            {
+                txtScore.Text = "Score: " + score + Environment.NewLine + "Collect all the coins";
+            }
+
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -143,12 +223,12 @@ namespace platform_game
             player.Top = 660;
 
             //enemies
-            enemyOne.Left = 510;
-            enemyTwo.Left = 250;
+            enemyOne.Left = 360;
+            enemyTwo.Left = 430;
 
             //platforms
-            verticalPlatform.Top = 240;
-            horizontalPlatform.Left = 290;
+            verticalPlatform.Top = 290;
+            horizontalPlatform.Left = 420;
 
             gameTimer.Start();
         }

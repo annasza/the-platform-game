@@ -42,7 +42,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.door = new System.Windows.Forms.PictureBox();
             this.enemyOne = new System.Windows.Forms.PictureBox();
             this.enemyTwo = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -88,7 +88,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.door)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -126,9 +126,9 @@
             // txtScore
             // 
             this.txtScore.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtScore.Location = new System.Drawing.Point(468, 9);
+            this.txtScore.Location = new System.Drawing.Point(377, 9);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(174, 73);
+            this.txtScore.Size = new System.Drawing.Size(265, 126);
             this.txtScore.TabIndex = 0;
             this.txtScore.Text = "Score: 0";
             this.txtScore.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -252,19 +252,19 @@
             this.player.TabIndex = 12;
             this.player.TabStop = false;
             // 
-            // pictureBox12
+            // door
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Black;
-            this.pictureBox12.Location = new System.Drawing.Point(-1, 9);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(30, 58);
-            this.pictureBox12.TabIndex = 13;
-            this.pictureBox12.TabStop = false;
+            this.door.BackColor = System.Drawing.Color.Black;
+            this.door.Location = new System.Drawing.Point(-1, 9);
+            this.door.Name = "door";
+            this.door.Size = new System.Drawing.Size(30, 58);
+            this.door.TabIndex = 13;
+            this.door.TabStop = false;
             // 
             // enemyOne
             // 
             this.enemyOne.BackColor = System.Drawing.Color.Red;
-            this.enemyOne.Location = new System.Drawing.Point(480, 392);
+            this.enemyOne.Location = new System.Drawing.Point(360, 392);
             this.enemyOne.Name = "enemyOne";
             this.enemyOne.Size = new System.Drawing.Size(30, 30);
             this.enemyOne.TabIndex = 14;
@@ -274,7 +274,7 @@
             // enemyTwo
             // 
             this.enemyTwo.BackColor = System.Drawing.Color.Red;
-            this.enemyTwo.Location = new System.Drawing.Point(300, 608);
+            this.enemyTwo.Location = new System.Drawing.Point(430, 608);
             this.enemyTwo.Name = "enemyTwo";
             this.enemyTwo.Size = new System.Drawing.Size(30, 30);
             this.enemyTwo.TabIndex = 15;
@@ -625,7 +625,7 @@
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.enemyTwo);
             this.Controls.Add(this.enemyOne);
-            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.door);
             this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
@@ -655,7 +655,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.door)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -707,7 +707,7 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox player;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox door;
         private System.Windows.Forms.PictureBox enemyOne;
         private System.Windows.Forms.PictureBox enemyTwo;
         private System.Windows.Forms.PictureBox pictureBox13;
