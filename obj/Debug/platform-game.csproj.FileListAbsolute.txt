@@ -1,0 +1,11 @@
+C:\Users\Ania\Documents\Projekty\the-platform-game\bin\Debug\platform-game.exe.config
+C:\Users\Ania\Documents\Projekty\the-platform-game\bin\Debug\platform-game.exe
+C:\Users\Ania\Documents\Projekty\the-platform-game\bin\Debug\platform-game.pdb
+C:\Users\Ania\Documents\Projekty\the-platform-game\obj\Debug\platform-game.csproj.AssemblyReference.cache
+C:\Users\Ania\Documents\Projekty\the-platform-game\obj\Debug\platform-game.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ania\Documents\Projekty\the-platform-game\obj\Debug\platform_game.Form1.resources
+C:\Users\Ania\Documents\Projekty\the-platform-game\obj\Debug\platform_game.Properties.Resources.resources
+C:\Users\Ania\Documents\Projekty\the-platform-game\obj\Debug\platform-game.csproj.GenerateResource.cache
+C:\Users\Ania\Documents\Projekty\the-platform-game\obj\Debug\platform-game.csproj.CoreCompileInputs.cache
+C:\Users\Ania\Documents\Projekty\the-platform-game\obj\Debug\platform-game.exe
+C:\Users\Ania\Documents\Projekty\the-platform-game\obj\Debug\platform-game.pdb

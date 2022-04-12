@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtScore = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -123,15 +123,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // txtScore
             // 
-            this.label1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(468, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 73);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Score: 0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.txtScore.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtScore.Location = new System.Drawing.Point(468, 9);
+            this.txtScore.Name = "txtScore";
+            this.txtScore.Size = new System.Drawing.Size(174, 73);
+            this.txtScore.TabIndex = 0;
+            this.txtScore.Text = "Score: 0";
+            this.txtScore.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // pictureBox1
             // 
@@ -638,7 +638,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtScore);
             this.Name = "Form1";
             this.Text = "Platform Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
@@ -694,7 +694,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
